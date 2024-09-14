@@ -1,0 +1,17 @@
+[Default]
+
+[snowflake]
+account=wo44959.us-east-1
+user=<snowflake credentials, DEDICATED account, if possible>
+password=<snowflake user password>
+database=FIVETRAN
+schema=OPDB_PUBLIC
+warehouse=LOOKER_WAREHOUSE
+role=SYSADMIN
+s3path=s3://freshly-data-production/snowflake-stage/model_b/data/
+table_survival=FRESHLY.ADHOC.MODEL_B_SURVIVAL_FUNCTION
+table_prediction=FRESHLY.ADHOC.MODEL_B_PREDICTION
+
+[aws]
+aws_key_id=<from ~/.aws/credentials>
+aws_secret_key==<from ~/.aws/credentials>
